@@ -3,22 +3,48 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Web Practice</title>
+    <title>Argiculture Webflow</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
-    <header>
-      <h1>Мій вебпроєкт</h1>
-    </header>
-    <main>
-      <section>
-        <h2>Головна секція</h2>
-        <p>Це перша сторінка навчального вебпроєкту.</p>
-      </section>
-    </main>
-    <footer>
-      <p>© 2026 Навчальна практика</p>
-    </footer>
+   <header class="main-header">
+    <div class="navbar content-wrap d-flex">
+        <nav class="navbar-content d-flex">
+            <div class="logo d-flex">
+                <img src="assets/images/icons/Vector.svg" alt="Logo">
+                <span>Organick</span>
+            </div>
+            <div id="iconBlock" class = "menu-icon">
+                <div id="iconOpen" class = "menu-icon-open"><i class="fa-solid fa-bars"></i></div>
+                <div id="iconClose" class = "menu-icon-close d-none"><i class="fa-solid fa-xmark"></i></div>
+            </div>
+            <ul id="mainMenu" class="main-menu d-flex">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+
+            <div class="top-panel">
+                <div class="search-box">
+                    <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+
+                <div class="cart-box">
+                    <div class="cart-icon"><i class="fa-solid fa-shopping-cart"></i></div>
+                    <span>Cart (0)</span>
+                </div>
+            </div>
+
+        </nav>
+    </div>
+</header>
     <script src="assets/js/main.js"></script>
+        
+      </div>
+      
   </body>
 </html>

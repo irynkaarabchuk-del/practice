@@ -1,12 +1,218 @@
+@import url('_variables.css');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 body {
-    font-family: Arial, sans-serif;
+    font-family: var(--main-font);
 }
+.d-flex {
+    display: flex;
+}
+.item-center {
+    align-items: center;
+    justify-content: center;
+}
+
+.d-none {
+    display: none;
+}
+
 img {
     max-width: 100%;
     display: block;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+.main-header {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.content-wrap {
+    max-width: 1596px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.navbar .logo span {
+    margin-left: 8.21px;
+    line-height: 56px;
+    color: var(--dark-color);
+    font-size: 2.375rem;
+    font-weight: 700;
+}
+
+.navbar {
+    align-items: center;
+    height: 80px;
+    position: relative;
+}
+
+.navbar-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.navbar .logo img {
+    width: 36.58px;
+}
+
+.navbar .menu-icon {
+    order: 2;
+    color: var(--dark-color);
+    margin-left: 10px;
+}
+/* ── TOP PANEL ── */
+.top-panel {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-left: auto;
+}
+
+/* ── SEARCH — мобільний: тільки кнопка ── */
+.search-box {
+    display: flex;
+    align-items: center;
+    background: transparent;
+    border-radius: 50%;
+    padding: 0;
+    width: auto;
+    height: auto;
+    gap: 0;
+}
+
+.search-box input {
+    display: none;
+}
+
+.search-btn {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: var(--secondary-color);
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 22px;
+}
+
+/* ── CART — мобільний ── */
+.cart-box {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    width: auto;
+    height: auto;
+    border: none;
+    border-radius: 50%;
+    padding: 0;
+}
+.menu-icon {
+    font-size: 10px;
+}
+.fa-solid {
+    font-size: 10px;
+}
+.cart-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: var(--dark-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 22px;
+}
+
+.cart-box span {
+    display: none;
+}
+.main-menu {
+    position:absolute;
+    top: 60px;
+    right: 1000px;
+    width: 100vw;
+    height: calc(100dvh - 60px);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+}
+
+.main-menu.menu-open {
+    left: 0;
+    transition: left 1s ease;
+}
+
+.main-menu li {
+    margin: 20px;
+}
+.main-menu li a {
+    color: var(--dark-color);
+}
+
+/* ── ДЕСКТОП ── */
+@media (min-width: 769px) {
+
+    .search-box {
+        width: 376px;
+        height: 66px;
+        background: #fafafa;
+        border-radius: 36px;
+        padding: 6px 6px 6px 16px;
+        gap: 6px;
+        justify-content: flex-end;
+    }
+    .fa-magnifying-glass {
+        font-size: 21px;
+    }
+    .fa-shopping-cart {
+        font-size: 23px;
+    }
+
+    .cart-box {
+        width: 159px;
+        height: 66px;
+        gap: 10px;
+        border: 1px solid #d0d0d0;
+        border-radius: 36px;
+        padding: 6px 6px 6px 16px;
+    }
+
+    .cart-box span {
+        display: inline;
+        font-size: 18px;
+        font-weight: 600;
+        color: var(--dark-color);
+        white-space: nowrap;
+    }
+    .search-btn,.cart-icon {
+        width: 56px;
+        height: 56px;
+        
+    }
+    .fa-bars, .fa-xmark {
+        font-size: 20px;
+    }
+    .menu-icon {
+    font-size: 22px; 
+}
+}
+
+@media (min-width: 1150px) {
+    .content-wrap {
+        padding: 0 20px;
+    }
 }
