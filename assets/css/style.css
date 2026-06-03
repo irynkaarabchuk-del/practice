@@ -40,6 +40,10 @@ ul {
     margin: 0 auto;
     padding: 0 20px;
 }
+.navbar .logo {
+   padding-left: 20px;
+   
+}
 .navbar .logo span {
     margin-left: 8.21px;
     line-height: 56px;
@@ -62,6 +66,7 @@ ul {
 }
 .navbar .logo img {
     width: 36.58px;
+
 }
 
 .navbar .menu-icon {
@@ -163,7 +168,10 @@ ul {
     margin: 20px;
 }
 .main-menu li a {
-    color: var(--dark-color);
+    color: var(--dark-color); 
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 
 .main-image {
@@ -291,7 +299,7 @@ ul {
 
 /* ── ДЕСКТОП ── */
 @media (min-width: 769px) {
-
+  
     .search-box {
         width: 376px;
         height: 66px;
@@ -349,7 +357,7 @@ ul {
     font-size: 20px;
 }
 .main-image {
-    padding-left: 100px;}
+    padding-left: 100px;
 }
 .main-image h1 {
    max-width: 300px;
@@ -357,7 +365,40 @@ ul {
    padding-top: 8px;
 }
 
+ .banner {
+        display: flex;
+        gap: 10px;
+        padding: 100px 40px;
+        flex-direction: row;
+
+            justify-content: center;
+
+    }
+
+    .banana-banner,
+    .apricot-banner {
+        width: 500px;
+        height: 200px;
+        margin: 0;
+    }
+
+    .banana-title,
+    .apricot-title {
+        font-size: 2rem;
+        top: 100px;
+        width: 300px;
+    }
+
+    .banana-banner .banana-text,
+    .apricot-banner .apricot-text {
+        top: 60px;
+        font-size: 1.50rem;
+    }
+}
 @media (min-width: 1366px) {
+    .navbar .logo {
+        padding-left: 70px;
+    }
      .menu-icon {
         display: none;
     }
@@ -375,8 +416,6 @@ ul {
 
     display: inline;
     vertical-align: middle;
-
-
 }
 .main-menu li  a {
    color: var(--dark-color);
@@ -390,4 +429,29 @@ ul {
     padding-left: 260px;
     max-height: 898px;
 }
+ .banner {
+        display: flex;
+        gap: 36px;
+        padding: 154px 40px;
+    }
+
+    .banana-banner,
+    .apricot-banner {
+        width: 682.24px;
+        height: 367px;
+        margin: 0;
+    }
+
+    .banana-title,
+    .apricot-title {
+        font-size: 2.5em;
+        top: 160px;
+        width: 300px;
+    }
+
+    .banana-banner .banana-text,
+    .apricot-banner .apricot-text {
+        top: 110px;
+        font-size: 2.25rem;
+    }
 }
