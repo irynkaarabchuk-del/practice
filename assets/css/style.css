@@ -391,7 +391,7 @@ ul {
 .shop .new-shop {
     color: #fff;
     font-size: 20px;
-    padding-right: 10px;
+    padding-right: 5px;
 }
 .shop .arrow-icon {
     display: flex;
@@ -409,7 +409,6 @@ ul {
 
 /* ── ДЕСКТОП ── */
 @media (min-width: 769px) {
-  
     .search-box {
         width: 376px;
         height: 66px;
@@ -480,7 +479,6 @@ ul {
         gap: 10px;
         padding: 100px 40px;
         flex-direction: row;
-
             justify-content: center;
 
     }
@@ -504,6 +502,19 @@ ul {
         top: 60px;
         font-size: 1.50rem;
     }
+
+     .about {
+        flex-direction: row;
+
+    }
+    .about-image {
+        width: 50%;
+        height: 35%;
+        object-fit: cover;
+        padding-left: 30px;
+        padding-top: 80px;
+    }
+    
 }
 @media (min-width: 1366px) {
     .navbar .logo {
@@ -563,5 +574,61 @@ ul {
     .apricot-banner .apricot-text {
         top: 110px;
         font-size: 2.25rem;
+    }
+     .about .information-about {
+               padding-top:186px;
+    }
+    .information-about {
+        width: 50%;
+        align-items: flex-start;
+    }
+
+     .about-image {
+        width: 50%;
+        height: 35%;
+        object-fit: cover;
+        padding-left: 30px;
+       padding-top:80px;
+    }
+    .about .information-about .text {
+        font-size: 36px;
+        justify-content: left;
+    }
+    .about .information-about h2 {
+font-size: 50px;
+width: 600px;
+    }
+    .about .information-about .about-text {
+        width: 550px;
+        line-height: 2;
+    } 
+     .feature-icon {
+        width: 101px;
+        height: 101px;
+        background-color: #fff;
+     }
+    .feature-icon img {
+    width: 46px;
+    height: 46px;
+}
+.second-text {
+    padding-bottom:46px;
+}
+.feature-text h3 {
+    font-size: 25px;
+    color: var(--dark-color);
+}
+  .shop {
+        width: 220px;
+        height: 79px;
+        margin: 0;
+        gap: 2px;
+    }
+
+    .shop .arrow-icon {
+        width: 19px;
+        height: 19px;
+        border-radius: 50%;
+        transform: rotate(270deg);
     }
 }
