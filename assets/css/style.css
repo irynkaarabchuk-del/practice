@@ -10,9 +10,6 @@
 
 body {
     font-family: var(--main-font);
-
-    overflow-x: hidden;
-
 }
 .d-flex {
     display: flex;
@@ -756,7 +753,9 @@ h2 {
     border-top: 1px solid #DEDDDD;
 
 }
-
+.customer {
+    padding-top: 164px;
+}
     .stat-item {
         width: 200px;
         height: 200px;
@@ -900,7 +899,7 @@ width: 600px;
     }
 .testimonial-girl {
     width: 760px;
-}
+}         
 .testimonial {
     width: 100%;
     margin-left: 0;
