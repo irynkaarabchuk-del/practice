@@ -10,7 +10,6 @@ iconBlock.addEventListener('click', () => {
 })
 
 
-// Modal
 const exploreBtn = document.getElementById('exploreBtn');
 const modalOverlay = document.getElementById('modalOverlay');
 const modalClose = document.getElementById('modalClose');

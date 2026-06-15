@@ -142,9 +142,9 @@ ul {
 }
 
 .main-menu {
-  position: absolute;
+  position: fixed;
   top: 75px;
-  right: 100vw;
+  left: -100vw;
   width: 100vw;
   height: calc(100dvh - 70px);
   flex-direction: column;
@@ -158,7 +158,6 @@ ul {
   background-color: #fff;
   z-index: 100;
 }
-
 .main-menu li {
   margin: 20px;
 }
@@ -410,10 +409,10 @@ h2 {
 }
 .products {
   display: grid;
-  grid-template-columns: 335px;
+  grid-template-columns: minmax(280px, 335px);
   justify-content: center;
   gap: 20px;
-  padding-bottom: 122px;
+  padding: 0 16px 122px;
 }
 
 .product-card {
@@ -431,9 +430,11 @@ h2 {
   font-size: 15px;
   font-weight: 600;
   padding: 6px 12px;
-  border-radius: 8px;
-  margin-bottom: 15px;
+  margin-bottom: 29px;
   font-family: var(--secondary-font);
+  border: none;
+  border-radius: 8px;
+
 }
 
 .product-card img {
@@ -714,13 +715,14 @@ h2 {
     flex-direction: column;
     gap: 24px;
     text-align: center;
-    align-items: centerж
+    align-items: center;
 
 }
 
 .offer-header {
-    flex-direction: column;
-    gap: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .offer .subtitle {
@@ -742,7 +744,7 @@ h2 {
     font-size: 16px;
     font-weight: 600;
     color: var(--dark-color);
-    align-items: center;
+
     gap: 10px;
     margin: 0 auto;
    
@@ -751,20 +753,32 @@ h2 {
 .offer-products {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 20px;
+    margin-top: 15px;
 }
-
+.offer-card .badge {
+  display: block;
+  width: fit-content;
+  margin-bottom: 8px;
+}
 .offer-card {
-    background: #fff;
-    border-radius: 20px;
-    padding: 20px;
+    background: #ffffff;
+  border-radius: 20px;
+  padding: 20px;
+  text-align: left;
+  position: relative;
+   width: 100%;
+    max-width: 335px;
+    flex-direction: column;
+
 }
 
 .offer-card img {
     width: 100%;
-    height: 200px;
-    object-fit: contain;
-    margin: 12px 0;
+  height: 220px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto ;
 }
 /* ── ДЕСКТОП ── */
 @media (min-width: 768px) {
@@ -903,18 +917,39 @@ h2 {
     max-width: 760px;
     padding-right: 20px;
   }
-  
- .offer-header {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
+  .offer {
+       height: 1050px;
+    align-items: center;
+    justify-content: center;
+  }
+.offer-header {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
 
     .offer-products {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
     }
+.offer img {
+  width: 260px;
+  height: 260px;
+}
+.offer-food{
+  padding:0;
+
+}
+.subtitle{
+  text-align: left;
+ 
+}
+.view {
+  margin: 0;
+
+}
 }
 @media (min-width: 1366px) {
   .navbar .logo {
@@ -1074,11 +1109,39 @@ h2 {
     transform: scaleX(-1);
   }
 
-   .offer {
-        padding: 80px 100px;
-    }
+  .offer {
+    padding: 80px 60px;
+ 
+  }
 
-    .offer-products {
-        grid-template-columns: repeat(4, 1fr);
-    }
+  .offer-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 24px;
+  }
+
+  .offer-products {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+  .view {
+  margin: 0;
+  width: 256px;
+  height: 79px;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+.offer-food{
+  padding:0;
+  font-size: 50px;
+}
+.subtitle{
+  text-align: left;
+  font-size: 36px;
+}
 }
