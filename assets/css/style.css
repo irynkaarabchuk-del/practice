@@ -822,6 +822,41 @@ h2 {
   color: #525C60;
   font-family: var(--secondary-font);
 }
+.galery {
+  background-color:#F1F8F4 ;
+    padding: 40px 20px;
+     flex-direction: column;
+    gap: 20px;
+   
+}.galery-item img {
+    width: 400px;
+    height: 350px;
+    object-fit: cover;
+    display: block;
+    border-radius: 0;
+}
+
+.galery-item {
+    position: relative;
+    border-radius: 0;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.galery-label {
+  width: 250px;
+  text-align: center;
+    position: absolute;
+    bottom: 45%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+    padding: 14px 28px;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--dark-color);
+}
 /* ── ДЕСКТОП ── */
 @media (min-width: 768px) {
   .search-box {
@@ -996,7 +1031,7 @@ h2 {
 }
 .about-us-content {
   position: absolute;
-  right: 100px;
+  right: 260px;
   left: auto;
   top: 50%;
   transform: translateY(-50%);
@@ -1012,6 +1047,31 @@ h2 {
 .about-us-content h3 {
   font-size: 20px;
 }
+  .galery {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+    }
+    .galery-item {
+        width: calc(50% - 10px);
+    }
+    .galery-item img{
+      width: 612px;
+      height: 583px;
+    }
+      .galery-label{
+        width: 320px;
+        height: 96px;
+        font-size: 25px;
+        border-radius: 20px;
+        top: 50%;
+            display: flex;
+    align-items: center;
+    justify-content: center;
+    top:45%
+      }
+
 }
 @media (min-width: 1366px) {
   .navbar .logo {
@@ -1229,5 +1289,21 @@ h2 {
   font-size: 25px;
   padding-top: 35px;
 }
+.galery {
 
+    padding: 40px 0px;
+     flex-direction: row;
+    gap: 20px;
+   
+}
+  .galery {
+        flex-wrap: nowrap;
+    }
+    .galery-item {
+        width: 611px;
+     padding-top: 187px;
+     padding-bottom: 187px;
+        }
+  
+    
 }
