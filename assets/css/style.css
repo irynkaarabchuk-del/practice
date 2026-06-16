@@ -886,10 +886,12 @@ h2 {
     border-radius: 16px;
     width: 200px;
     height: 50px;
-    text-align: center;
+    align-items: center;
+    justify-content: center;
     gap: 9px;
     margin-top: 20px;
     border: 2px solid;
+
 }
 .fa-user {
   color: var(--btn-bg-color);
@@ -908,7 +910,7 @@ h2 {
 }
 
 .blog-card img {
-    width: 100%;
+    width: 300px;
     border-radius: 25px;
     display: block;
 }
@@ -930,7 +932,7 @@ h2 {
 
     border-radius: 50%;
     background: white;
-
+  color: var(--dark-color);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -953,8 +955,8 @@ h2 {
     border-radius: 20px;
     background: white;
     position: relative;
-    z-index: 2;
-        box-shadow: 0 20px 35px rgba(0, 0, 0, 0.12);
+  
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.12);
 }
 
 .blog-author {
@@ -1205,7 +1207,51 @@ h2 {
     justify-content: center;
     top:45%
       }
+         .blog {
+        padding: 0 30px;
+    }
 
+    .blog-header {
+      width: 700px;
+      flex-direction: row;
+        margin: 0 auto 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        text-align: left;
+    }
+
+    .blog-header h2 {
+        max-width: 500px;
+        padding: 0;
+    }
+
+    .blog-cards {
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+    }
+    .blog .subtitle {
+      font-size: 36px;
+    text-align: left;  
+    }
+    .blog-card {
+        width: 340px;
+        padding: 0;
+    }
+
+    .blog-card img {
+        width: 340px;
+    }
+
+    .blog-content {
+        width: 290px;
+    }
+    .blog-title {
+      flex-direction: column;
+    }
+    
+   
 }
 @media (min-width: 1366px) {
   .navbar .logo {
@@ -1438,6 +1484,80 @@ h2 {
      padding-top: 187px;
      padding-bottom: 187px;
         }
-  
-    
+       
+    .blog {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    .blog-header {
+        width: 1320px; /* ширина двох карток + gap */
+        margin: 0 auto 48px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        text-align: left;
+        margin-top: 100px;
+    }
+
+    .blog-header h2 {
+        max-width: 700px;
+        font-size: 50px;
+    }
+
+    .blog .subtitle {
+        text-align: left;
+    }
+
+    .blog-cards {
+        flex-direction: row;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .blog-card {
+        width: 677px;
+        
+    }
+    .blog-card img {
+        width: 677px;
+        height: 524px;
+    }
+
+    .blog-content {
+        width: 613px;
+padding: 46px 57px 60px 57px;
+bottom: 200px;
+    }
+
+
+    .blog-text {
+        font-size: 18px;
+    }
+    .news {
+      width: 220px;
+      height: 80px;
+      border-radius: 16px;
+      align-items: center;
+      justify-content: center;
+    }
+   .blog-date {
+      width: 82px;
+      height: 82px;
+    }
+    .day {
+      font-size: 25px;
+    }
+    .month {
+      font-size: 20px;
+    }  
+    .read-more {
+      width: 220px;
+      height: 80px;
+      font-weight: bold;
+    }
+    .news {
+      font-weight: bold;
+    }
 }
