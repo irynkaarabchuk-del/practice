@@ -27,3 +27,17 @@ modalOverlay.addEventListener('click', (e) => {
         modalOverlay.classList.remove('active');
     }
 });
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
+  });
+}, { threshold: 0.1 });
+
+document.querySelectorAll(
+  '.about, .products-section, .testimonial, .offer, .about-us, .galery, .blog, .newsletter, footer'
+).forEach(el => {
+  el.classList.add('animate');
+  observer.observe(el);
+});
